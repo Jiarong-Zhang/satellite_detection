@@ -1,0 +1,13 @@
+Edge TPU Compiler version 16.0.384591198
+Input: tflite/mobiledet_qat/mobiledet_qat.tflite
+Output: tflite/mobiledet_qat/mobiledet_qat_edgetpu.tflite
+
+Operator                       Count      Status
+
+LOGISTIC                       1          Mapped to Edge TPU
+ADD                            15         Mapped to Edge TPU
+CUSTOM                         1          Operation is working on an unsupported data type
+RESHAPE                        13         Mapped to Edge TPU
+CONCATENATION                  2          Mapped to Edge TPU
+DEPTHWISE_CONV_2D              27         Mapped to Edge TPU
+CONV_2D                        66         Mapped to Edge TPU
